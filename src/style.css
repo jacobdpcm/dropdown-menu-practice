@@ -6,5 +6,33 @@ body {
     color: black;
     overflow-y: auto;
     overflow-x: auto;
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    grid-template-rows: 3rem 1fr;
+}
+
+.side {
+    background-color: aqua;
+    grid-row: 1/-1;
+}
+
+.nav {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;   
+}
+
+.navButton {
+    padding: 1rem;
+    border: black solid 1px;
+    border-top: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.content {
+    background-color: brown;
 }
 
