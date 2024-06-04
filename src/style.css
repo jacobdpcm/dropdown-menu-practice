@@ -26,6 +26,7 @@ body {
 
 .navButton {
     padding: 1rem;
+    background-color: antiquewhite;
     border: black solid 1px;
     border-top: none;
     border-bottom: none;
@@ -36,3 +37,24 @@ body {
     background-color: brown;
 }
 
+.hidden {
+    display: none;
+}
+
+.dropdownWrapper {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100%);
+    background-color: white;
+    padding: .5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+   opacity: 0;
+}
+
+.navButton:focus + div {
+    opacity: 1;
+}
